@@ -1,0 +1,240 @@
+/* 'Montserrat' */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+
+:root{
+    --bg-color: rgba(212, 210, 210, 0.938);
+    --white-color: #fff;
+    --orange-color: orange;
+    --title-color: rgb(63, 58, 58);
+    --black-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background: var(--white-color);
+    align-items: center;
+}
+
+/* head section */
+/* .head{
+    width: 100%;
+    position: fixed;
+}
+
+.header{
+    background: var(--title-color);
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+    padding: 0.5rem 14%;
+}
+
+.header h1 a{
+    color: var(--white-color);
+    padding: 0.5rem 14%;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.header h1 span{
+    color: var(--orange-color);
+} */
+
+
+/* 
+.navbar{
+    background-color: var(--bg-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 14%;
+}
+
+.navbar .navlist{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.navbar .navlist a{
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar .navlist a:hover{
+    background-color: var(--white-color);
+    color: var(--orange-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: 300;
+}
+
+/* Nav icons start */
+/* .header .navbar .nav-icons{
+    gap: 5rem;
+    
+}
+
+.header .navbar .nav-icons a{
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.5rem;
+    cursor: pointer;
+} */
+
+/* media query for navbar */
+/* @media (min-width:748px){
+    .header .navbar .nav-icons{
+        display: none;
+    }
+}
+
+@media(max-width:748px){
+    .header .navbar .nav-icons{
+        display: flex;
+        gap: 5rem;
+        color: var(--black-color);
+        margin-right: 1rem;
+        margin-left: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:748px){
+    .navlist li a{
+        display: none;
+    }
+} */
+
+
+/* book collection start */
+.best-collection{
+    width: 100%;
+    padding-top: 0.5rem;
+    align-items: center;
+    background: var(--white-color);
+}
+
+.best-collection h2{
+    background: var(--title-color);
+    text-align: center;
+    color: var(--white-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+} 
+ 
+/* for latest h2 */
+.best-collection .latest{
+    padding-top: 2rem; 
+}
+
+.best-collection h2 span{
+    color: var(--orange-color);
+}
+
+.best-collection .collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 10rem;
+    padding-top: 1rem;
+    padding-left: 14%;
+    padding-right: 14%;
+    gap: 7rem;
+    box-shadow: 0 5px o rgba(0,0,0,0.5);
+    width: 100%;
+    border: 2rem solid var(--title-color);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.best-collection .collection img{
+    width: 250px;
+    margin-bottom: 0;
+    display: flex;
+    background: #f0e1e1;
+    border: solid var(--orange-color);
+    padding: 2rem;
+}
+
+.best-collection button{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: solid var(--orange-color);
+    border-radius: 40px;
+    margin-bottom: 1rem;
+}
+
+.best-collection button a{
+    color: var(--orange-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.best-collection button a:hover{
+    color: var(--white-color);
+    background: var(--orange-color);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 40px;
+    border: none;
+}
+
+
+
+
+/* footer section */
+footer{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--title-color);
+}
+
+footer p{
+    color: var(--white-color);
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem 14%;
+}
+
+footer p span{
+    color: var(--orange-color);
+}
+
+.design{
+    color: var(--black-color);
+    font-size: 0.5rem;
+    text-align: end;
+  }
